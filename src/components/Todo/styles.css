@@ -1,0 +1,62 @@
+.Todo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: 100%; */
+    justify-content: space-between;
+    column-gap: 12px;
+    background-color: #2E4053;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+.Text{
+    margin: 0;
+}
+.Text-todo{
+    font-size: large;
+    word-break: break-all;
+    user-select: none;
+}
+.TodoItem{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+.Text-todo.completed{
+    text-decoration: line-through;
+}
+
+.BtnDanger{
+    padding: 8px 12px;
+    margin: 0;
+    border:1px solid #E74C3C;
+    color: #E74C3C;
+}
+.BtnDanger:hover{
+    background-color: #E74C3C;
+    color: aliceblue;
+}
+.Btn-checkbox{
+    width: 30px;
+    height: 30px;
+    margin: 0px !important;
+    border-radius: 50%;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Btn-checkbox.checked{
+    outline: 1px solid #2ECC71;
+}
+.Btn-checkbox.checked svg{
+    width: 25px;
+    height: 25px;
+    color: #2ECC71;
+}
