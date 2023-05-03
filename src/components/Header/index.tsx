@@ -1,5 +1,4 @@
 import { useAppSelector } from '../../hooks/store'
-import { useCollapseActions } from '../../hooks/useCollapseActions'
 import { useTodosActions } from '../../hooks/useTodosActions'
 import { type TodoName } from '../../redux/todo/type'
 import { CheckvronDown } from '../Icons/CheckvronDown'
@@ -7,8 +6,8 @@ import { CheckvronDown } from '../Icons/CheckvronDown'
 import './styles.css'
 const Header: React.FC = () => {
   const { addTodo } = useTodosActions()
-  const { toggleCollapse } = useCollapseActions()
-  const collapse = useAppSelector(state => state.collapse)
+  const { toggleCollapse } = useTodosActions()
+  const collapse = useAppSelector(state => state.todos.collapse)
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault()
@@ -36,7 +35,7 @@ const Header: React.FC = () => {
           type='text'
           name='name'
           className='Input'
-          placeholder='Agregar Todo'
+          placeholder='What needs to be done?'
         />
       </form>
     </div>

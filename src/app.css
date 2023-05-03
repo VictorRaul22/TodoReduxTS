@@ -12,7 +12,75 @@
     margin: 6px 0px;
 
 }
-.Btn-icon {
+.Text{
     margin: 0;
+}
+.Btn{
+    padding: 8px 12px !important;
+    margin: 0;
+}
+.BtnIcon {
     padding: 6px 18px;
+    margin: 0;
+}
+.Btn--danger{
+    
+    border:1px solid #E74C3C;
+    color: #E74C3C;
+}
+.Btn--danger:hover{
+    background-color: #E74C3C;
+    color: aliceblue;
+}
+.Btn--checkbox{
+    width: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    height: 30px;
+    margin: 0px !important;
+    border-radius: 50%;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Btn--checkbox.checked{
+    outline: 1px solid #2ECC71;
+}
+.Btn--checkbox.checked svg{
+    width: 25px;
+    height: 25px;
+    color: #2ECC71;
+}
+.u-bgBlue{
+    background-color:#3498DB;
+}
+.u-bgGreen{
+    background-color:#2ECC71;
+}
+.u-bgOrange{ 
+    background-color:#E67E22;
+}
+.u-bgPurple{
+    background-color:#8E44AD;
+}
+.u-bgRed{
+    background-color:#E74C3C;
+}
+
+.u-colorBlue{
+    color:#3498DB;
+}
+.u-colorGreen{
+    color:#2ECC71;
+
+}
+.u-colorOrange{ 
+    color:#E67E22;
+}
+.u-colorPurple{
+    color:#8E44AD;
+}
+.u-colorRed{
+    color:#E74C3C;
 }

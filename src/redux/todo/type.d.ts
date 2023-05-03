@@ -1,6 +1,9 @@
+import { type ColorType } from '../filter/type'
+
 export interface Todo {
   name: string
   completed: boolean
+  color?: ColorType | null
 }
 
 export interface TodoWithId extends Todo {

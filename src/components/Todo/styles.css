@@ -10,10 +10,8 @@
     padding: 6px 10px;
 }
 
-.Text{
-    margin: 0;
-}
-.Text-todo{
+
+.TodoItem-text{
     font-size: large;
     word-break: break-all;
     user-select: none;
@@ -28,35 +26,17 @@
 }
 
 
-.Text-todo.completed{
+.TodoItem-text.completed{
     text-decoration: line-through;
 }
-
-.BtnDanger{
-    padding: 8px 12px;
-    margin: 0;
-    border:1px solid #E74C3C;
-    color: #E74C3C;
-}
-.BtnDanger:hover{
-    background-color: #E74C3C;
-    color: aliceblue;
-}
-.Btn-checkbox{
-    width: 30px;
-    height: 30px;
-    margin: 0px !important;
-    border-radius: 50%;
-    padding: 0 !important;
+.TodoItem-actions{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    column-gap: 6px;
 }
-.Btn-checkbox.checked{
-    outline: 1px solid #2ECC71;
-}
-.Btn-checkbox.checked svg{
-    width: 25px;
-    height: 25px;
-    color: #2ECC71;
+.Select{
+    margin: 0 !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
 }

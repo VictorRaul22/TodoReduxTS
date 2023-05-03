@@ -1,0 +1,65 @@
+.Footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 12px;
+    column-gap: 4px;
+}
+.Footer-section{
+    flex-grow: 1;
+    flex-basis: calc(100%/4);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    row-gap: 6px;
+}
+.Fotter-section--status{
+    align-items: center;
+}
+.Footer-title{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+.Footer-btn{
+    margin: 0px !important;
+    padding: 2px 8px!important;
+    font-size: small;
+    box-shadow: 0 0 0 2px black;
+}
+.Footer-btn--out{
+    background-color: transparent;
+    /* border: 1px solid ; */
+    color: black;
+}
+.Footer-btn--out:hover{
+    background-color: transparent;
+}
+.Footer-btn--out.selected{
+    box-shadow: 0 0 0 2px var(--focus);
+    
+}
+.Footer-text{
+    text-align: center;
+}
+.Footer-groupCheckbox{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+.Footer-groupCheckbox-prev{
+    min-width: 25px;
+    height: 15px;
+    min-height: 15px;
+}
+
+
+
+
+
+
+
+
